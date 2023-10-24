@@ -44,7 +44,6 @@ https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/getDetalles.png
 
 https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/deleteTutorial.png
 
-
 ## Features
 
 - Agregar, modificar o eliminar tutoriales
