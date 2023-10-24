@@ -34,7 +34,15 @@ Para ejecutar el proyecto
 
 ## Demo
 
-<span>![</span><span>no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/LethSphere/api-rest-go-oati/tree/main/assets/postTutorial.png</span><span>)</span>
+https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/postTutorial.png
+
+https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/postDetalles.png
+
+https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/getTutorial.png
+
+https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/getDetalles.png
+
+https://github.com/LethSphere/api-rest-go-oati/blob/main/assets/deleteTutorial.png
 
 
 ## Features
