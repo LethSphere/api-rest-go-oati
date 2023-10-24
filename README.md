@@ -15,21 +15,24 @@ detalle.
 
 ## Deployment
 
-En la terminal que desee usar docker
+
 
 ```bash
   cd database
   docker build . 
   docker run 
 ```
-Para ejecutar el proyecto
+
+```bash
+  go get github.com/gin-gonic/gin
+```
 
 ```bash
   go run main.go
 ```
 ## Tech Stack
 
- Go, Dockerfile
+ Go, Gin, Dockerfile
 
 
 
