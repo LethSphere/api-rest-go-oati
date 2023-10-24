@@ -39,6 +39,7 @@ func main() {
 func BindRoutes(s server.Server, r *mux.Router) {
 	r.HandleFunc("/", handlers.HomeHandler(s)).Methods(http.MethodGet)
 	r.HandleFunc("/tutorials", handlers.TutorialRegisterHandler(s)).Methods(http.MethodPost)
+	r.HandleFunc("/tutorials/{id}", handlers.GetTutorialByIdHandler((s))).Methods(http.MethodGet)
 	r.HandleFunc("/tutorials/{id}", handlers.UpdateTutorialHandler((s))).Methods(http.MethodPut)
 	r.HandleFunc("/tutorials/{id}", handlers.DeleteTutorialHandler((s))).Methods(http.MethodDelete)
 	r.HandleFunc("/tutorials", handlers.ListTutorialHandler(s)).Methods(http.MethodGet)

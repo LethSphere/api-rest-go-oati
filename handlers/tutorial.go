@@ -92,6 +92,19 @@ func TutorialConsultHandler(s server.Server) http.HandlerFunc {
 	}
 }
 
+func GetTutorialByIdHandler(s server.Server) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		params := mux.Vars(r)
+		tutorial, err := repository.GetTutorialById(r.Context(), params["id"])
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(tutorial)
+	}
+}
+
 func UpdateTutorialHandler(s server.Server) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		params := mux.Vars(r)
